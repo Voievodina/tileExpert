@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 
 @Component({
@@ -7,7 +8,33 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css'],
   host: {
     '(document:click)': 'clearSearch($event)',
-  }
+  },
+  animations: [
+    trigger(
+      'openAnimation', [
+        transition(':enter', [
+          style({ 
+          left:"93%",
+           width:"0%",
+          }), 
+          animate('0.5s ease', style({ 
+            left:"0",
+            width:'90%',
+          }))
+        ]),
+        transition(':leave', [          
+          style({width:"90%", 
+          left:"0",
+            }),    
+          animate('0.5s ease',
+           style({
+             width:"0%",
+              left:"93%"
+            }))
+      ])
+      ]
+    )
+  ],
 })
 
 export class AppComponent {

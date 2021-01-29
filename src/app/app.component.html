@@ -4,57 +4,56 @@
     <input type="checkbox" name="menu" id="btn-menu" />
     <label for="btn-menu" id="btn"><span class="material-icons">dehaze</span></label> 
     <div class="container">
-    <label for="links">Ссылки</label>
-    <select name="links" id="links"></select>
-    <a href="#">Контакты</a>
-    <label for="tags">Теги</label>
-    <select name="tags" id="tags"></select>
-    <label for="requests">Просьбы</label>
-    <select name="requests" id="requests"></select>
-    <label for="favorites">Избранное</label>
-    <select name="favorites" id="favorites"></select>
-    <label for="visits">Посещения</label>
-    <select name="visits" id="visits"></select>
+      <label for="links">Ссылки</label>
+      <select name="links" id="links"></select>
+      <a href="#">Контакты</a>
+      <label for="tags">Теги</label>
+      <select name="tags" id="tags"></select>
+      <label for="requests">Просьбы</label>
+      <select name="requests" id="requests"></select>
+      <label for="favorites">Избранное</label>
+      <select name="favorites" id="favorites"></select>
+      <label for="visits">Посещения</label>
+      <select name="visits" id="visits"></select>
     </div>
-    <div class="material-icons search" (click)="onSearch()" id="searchIcon">search</div>
-     <div *ngIf="isSearching" class="searching" id="lookFor">
-       <div class="seekOut">
-        <input type="text" name="search" id="search" (focus)="onOptions()">
+  </div>
+  <div class="material-icons search" (click)="onSearch()" id="searchIcon">search</div>
+  <div  *ngIf="isSearching" class="searching" id="lookFor">
+    <div class="seekOut" >
+        <input [@openAnimation] type="text" name="search" id="search" (focus)="onOptions()">
         <span class="material-icons go">search</span>
         <span class="material-icons clear">clear</span>
         <button>Найти</button>
-      </div>
-      <div *ngIf="isChoosig" class="options">
+    </div>
+    <div *ngIf="isChoosig" class="options">
         <div class="checkbox">
           <input type="checkbox" name="my" id="my">
           <label for="my" class="checkbox">мои</label>
         </div>
-          <input type="text" name="author" id="author" placeholder="Автор">
-          <label for="sort" class="sort">Сортировать по:</label>
-          <select name="sort" id="sort">
-            <option value="date">дате</option>
-            <option value="date">релевантности</option>
-          </select><br>
-          <div class="checkbox block">
-            <input type="checkbox" name="participant" id="participant">
-            <label for="participant"  >я участник</label>
-          </div>
-          <div class="checkbox block">
-            <input type="checkbox" name="heading" checked id="heading">
-            <label for="heading" class="checkbox block">в заголовке</label>
-          </div>
-          <div class="checkbox block">
-            <input type="checkbox"  name="strict" id="strict">
-            <label for="strict" class="checkbox block"> строгий поиск</label>
-          </div>
+        <input type="text" name="author" id="author" placeholder="Автор">
+        <label for="sort" class="sort">Сортировать по:</label>
+        <select name="sort" id="sort">
+          <option value="date">дате</option>
+          <option value="date">релевантности</option>
+        </select><br>
+        <div class="checkbox block">
+          <input type="checkbox" name="participant" id="participant">
+          <label for="participant"  >я участник</label>
         </div>
-    </div>
+        <div class="checkbox block">
+          <input type="checkbox" name="heading" checked id="heading">
+          <label for="heading" class="checkbox block">в заголовке</label>
+        </div>
+        <div class="checkbox block">
+          <input type="checkbox"  name="strict" id="strict">
+          <label for="strict" class="checkbox block"> строгий поиск</label>
+        </div>
+      </div>
   </div>
  <div class="material-icons add">add_circle</div>
-    <div class="material-icons email">email</div>
-    <div class="material-icons notification">notifications_none
-    </div>
-    <span class="notices">18</span>
-    <div class="photo"><img src="../assets/img/photo.jpg" alt="photo"></div> 
+  <div class="material-icons email">email</div>
+  <div class="material-icons notification">notifications_none</div>
+  <span class="notices">18</span>
+  <div class="photo"><img src="../assets/img/photo.jpg" alt="photo"></div> 
   </nav>
   
