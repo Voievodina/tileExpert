@@ -1,27 +1,4 @@
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-  }
-
-  .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;
-  }
-
-  @media (max-width: 1920px){
+@media (max-width: 1920px){
     nav{
         background-color: rgb(31, 119, 199);
         box-shadow: 1px 2px 2px 2px  rgba(225, 225, 225);
@@ -74,12 +51,6 @@
     
     .container>select{
         display: none;
-    }
-    
-    select{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
     }
 
     .container>label::after{
@@ -154,105 +125,6 @@
         top: 0;
         left:12%;
     }
-    .seekOut{
-        position: relative;
-        width: 800px;
-    }
-
-        
-    .seekOut>input{
-        width: 680px;
-        height: 30px;
-        border-radius: 2px 0 0 2px;
-        border:1px solid transparent;
-        padding-left: 25px;
-        position: relative;
-    }
-
-    .go{
-        color: rgb(193, 193, 193);
-        position: absolute;
-        top:25%;
-        left: 0.5%;
-        
-    }
-    .clear{
-        color: rgb(153, 159, 169);
-        position: absolute;
-        top:25%;
-        right:12%;
-    }
-
-    button{
-        background-color: rgb(255, 193, 32);
-        width: 70px;
-        height: 33px;
-        color: white;
-        border: 1px solid transparent;
-        border-radius: 0 2px  2px 0;
-        position: absolute;
-        top:22%;
-        right: 3%;
-    }
-
-    .options{
-        border: 1px solid rgb(196, 206, 213);
-        box-shadow: 0 2px 0 2px rgba(225, 225, 225);
-        background-color: white;
-        height: 160px;
-        width: 425px;
-        padding: 20px;
-        position: absolute;
-        z-index: 1;
-    }
-
-    .options>select{
-        border: 1px solid rgb(196, 206, 213);
-        width: 146px;
-        height: 37px;
-        padding: 10px;
-        background-color:rgb(242, 242, 242);
-    }
-    .checkbox{
-        display: inline-block;
-        
-    }
-
-    input[type="checkbox"]{
-        display: none;
-    }
-
-    .checkbox>label::before{
-        content: " ";
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        border-radius: 4px;
-        border: 2px solid rgb(196, 206, 213);
-        margin: 7px;
-        margin-bottom:-5px;
-    }
-
-    input[type="checkbox"]:checked + label::before{
-        content: "\2714";
-        background-color: rgb(143, 192, 79); 
-        color: white;
-        text-align: center;
-        line-height: 18px;
-    }
-    #author{
-        width: 313px;
-        height: 37px;
-        margin: 10px;
-    }
-
-    .sort::after{
-        content: "▼";
-        padding: 8px;
-        font-size: 12px; 
-        position: relative;
-        left: 35%; 
-    }
 }
 @media (max-width: 1367px){
     .container{
@@ -278,23 +150,8 @@
         right: 6%;
     }
 
-
     .searching{
         left:16%;
-    }
-    .seekOut{
-        width: 650px;
-    }
-
-    .seekOut>input{
-        width: 560px;
-    }
-    .clear{
-        right: 14%;
-    }
-
-    button{
-        width: 65px;
     }
 }
 @media (max-width: 1025px){
@@ -337,45 +194,6 @@
 
     .searching{
         left:13%;
-    }
-
-    .seekOut{
-        width: 520px;
-    }
-    .seekOut>input{
-        width: 430px;
-    }
-    .clear{
-        right:12%;
-    }
-    
-    button{
-        height: 33.5px;
-        right: -0.7%;
-        top:20%;
-    }
-
-    .options{
-        width: 380px;
-    }
-
-    .options>select{
-        width: 140px;
-    }
-
-    .options>label{
-        margin: 5px;
-    }
-    
-    
-    .checkbox::before{
-        width: 16px;
-        height: 16px;
-    }
-    
-    #author{
-        width: 280px;
-        margin: 8px;
     }
 }
 
@@ -450,29 +268,6 @@
         top: 58%;
     }
 
-    .seekOut{
-        width: 310px;
-    }
-    .seekOut>input{
-        width: 250px;
-        padding-left: 25px;
-    }
-
-    .clear{
-        right:18%; 
-    } 
-
-    button{
-        width: 60px;
-        right: -2.5%;
-        top:20.5%;
-        height: 33.2px;
-    }
-
-    .options{
-        height: 290px;
-        width: 310px;
-    }
     #author{
         width: 180px;
     }
@@ -484,15 +279,6 @@
     .searching{
         left:8%;
     } 
-
-    .options>select{
-        width: 130px;
-    }
-
-    .sort::after{
-        left:45%; 
-    }
-
 }
 
 

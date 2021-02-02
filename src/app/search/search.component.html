@@ -1,0 +1,8 @@
+<div class="seekOut" >
+    <input [@openAnimation] type="text" name="search" id="search" (focus)="onOptions()">
+    <span class="material-icons go">search</span>
+    <span class="material-icons clear">clear</span>
+    <button>Найти</button>
+</div>
+<options *ngIf="isChoosig" class="options"></options>
+
